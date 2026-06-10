@@ -4,17 +4,18 @@ module.exports = defineConfig({
 
     testDir: '.',
 
+    reporter: [
+        ['html'],
+        ['list']
+    ],
+
     use: {
+        headless: true,
 
-        headless: false,
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
+        trace: 'retain-on-failure'
+    },
 
-        screenshot:
-            'only-on-failure',
-
-        video:
-            'retain-on-failure',
-
-        trace:
-            'retain-on-failure'
-    }
+    timeout: 60000
 });
