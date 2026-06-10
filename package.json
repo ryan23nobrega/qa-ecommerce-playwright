@@ -1,0 +1,34 @@
+{
+  "name": "qa-ecommerce-playwright",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes UI e API utilizando Playwright",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests",
+    "test:api": "playwright test api",
+    "report": "playwright show-report",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
+  },
+  "keywords": [
+    "qa",
+    "playwright",
+    "automation",
+    "testing",
+    "api-testing",
+    "e2e"
+  ],
+  "author": "Ryan Nobrega",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.5"
+  }
+}
